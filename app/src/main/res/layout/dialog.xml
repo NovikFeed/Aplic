@@ -1,0 +1,50 @@
+<!-- res/layout/custom_dialog_layout.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/red10"
+    android:minWidth="180dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialH1"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/dialogImage"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/dialogTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/teslalogo_png"></ImageView>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogImage"
+        android:layout_marginTop="16dp"
+        android:maxWidth="170dp"
+        android:minHeight="40dp"
+        android:text="@string/dialParagraph"
+        android:textAlignment="center"
+        android:textSize="11dp"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ok"
+        android:layout_below="@+id/dialogMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
